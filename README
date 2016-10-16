@@ -1,0 +1,43 @@
+README
+======
+
+I did it as a part of homework problem in the Machine Learning class taught by Prof Daniel Gildea (https://www.cs.rochester.edu/~gildea/) in Spring 2014.
+
+===============================
+Name: Md. Iftekhar Tanveer
+Email: itanveer@cs.rochester.edu  or  go2chayan@gmail.com
+Course: CS446
+Homework: Implement linear regression for the voting dataset using Python. Split the 435 examples into 348 train / 45 dev / 42 test and report your classification accuracy on the test set.
+
+
+************** Files ***************
+README: This document
+progAss1.py: The original python script. No functions defined. Just run the file using python
+
+************* Algorithm ************
+1. split dataset
+2. w = pseudoinverse(X_train)*Y_train
+3. Y_test = sign(X_test*w)
+4. Check accuracy
+5. repeat 100 times and calculate average accuracy
+
+************* Results **************
+Since the dataset was split by random sample, the 
+average accuracy varies in each run. Typically it is
+close to 0.89
+
+************* Interpretations *****
+None
+
+************* References ************
+I asked TA if it okay to randomly sample for
+spliting the dataset into training and testing
+set. He said it is okay.
+
+I got an instruction from TA to ignore the 
+Development set. So I didn't tune the parameter
+Lamda. I just set it to zero.
+   
+
+
+
